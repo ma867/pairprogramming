@@ -60,6 +60,42 @@ const forEach = (arr, callback) => {
 }
 ```
 
+# Extension One
+Navigator: Tony <br />
+Driver: Melissa <br />
+SRC File: 'challengeFour.js' line: 20
+
+## Description:
+For this function we rewrote the map function utilizing the forEach function we wrote previously.
+
+```
+const mapWith = (arr, callback) =>{
+  const newArr = []
+  forEach(arr, (i)=>{
+    newArr.push(callback(i))
+  })
+  return newArr
+}
+```
+
+# Extension Two
+Navigator: Melissa <br />
+Driver: Tony <br />
+SRC File: 'challengeFour.js' line: 32
+
+## Description:
+We are utilizing the initial value to create a counter and then navigating through the arr to add to the counter and then return the counter.
+
+```
+const reduce = (arr, initialValue, callback) => {
+  let counter = initialValue
+  forEach(arr, (i) => {
+    counter += callback(i)
+  })
+  return counter
+}
+```
+
 # Challenge Five
 Navigator: Melissa <br />
 Driver: Tony <br />
