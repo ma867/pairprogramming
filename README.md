@@ -96,6 +96,35 @@ const reduce = (arr, initialValue, callback) => {
 }
 ```
 
+# Extension Three
+Navigator: Tony <br />
+Driver: Melissa <br />
+SRC File: 'challengeFour.js' line: 44
+
+## Description:
+The goal is to pull out the first array in the array of arrays. Thats what we use to compare if a number appears in all the other arrays. We run a forEach over that first array and we check if the other arrays include that number, if they do we increment the counter. If the counter hits the number of arrays that are left we push that number to our result.
+
+```
+const intersection=(...arr)=>{
+  const newArr = arr.shift()
+  const result = []
+
+  newArr.forEach(number => {
+    let counter = 0
+    arr.forEach(eleArr => {
+      if (eleArr.includes(number)) {
+        counter++
+      }
+    })
+    if (counter === arr.length) {
+      result.push(number)
+    }
+  })
+  
+  return result
+}
+```
+
 # Challenge Five
 Navigator: Melissa <br />
 Driver: Tony <br />

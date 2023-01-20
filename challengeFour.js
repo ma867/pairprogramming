@@ -43,12 +43,22 @@ console.log(reduce([1,2,3], 0, (i) => {return i + 2}))
 
 //===========EXTENSION 3=================
 const intersection=(...arr)=>{
-  const newArr = []
+  const newArr = arr.shift()
+  const result = []
 
-  for(let i=0; i< arr.length; i++){
-    console.log(arr)
-  }
-  return newArr
-
+  newArr.forEach(number => {
+    let counter = 0
+    arr.forEach(eleArr => {
+      if (eleArr.includes(number)) {
+        counter++
+      }
+    })
+    if (counter === arr.length) {
+      result.push(number)
+    }
+  })
+  
+  return result
 }
-// console.log(intersection([5, 10, 15, 20, 10], [15, 88, 1, 5, 7], [1, 10, 15, 5, 20]))
+
+console.log(intersection([5, 10, 15, 20, 10], [15, 88, 1, 5, 7], [1, 10, 15, 5, 20]))
