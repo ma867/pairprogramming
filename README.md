@@ -31,6 +31,8 @@ const addTwo = (num) => {
 }
 ```
 
+[Back To Top](#table-of-contents)
+
 # Challenge Two
 **Navigator:** *Tony* <br />
 **Driver:** *Melissa* <br />
@@ -44,6 +46,8 @@ const addS = (str) => {
   return str + 's'
 }
 ```
+
+[Back To Top](#table-of-contents)
 
 # Challenge Three
 **Navigator:** *Melissa* <br />
@@ -63,6 +67,8 @@ const map = (arr, callBack) => {
 }
 ```
 
+[Back To Top](#table-of-contents)
+
 # Challenge Four
 **Navigator:** *Tony* <br />
 **Driver:** *Melissa* <br />
@@ -78,6 +84,8 @@ const forEach = (arr, callback) => {
   }
 }
 ```
+
+[Back To Top](#table-of-contents)
 
 # Extension One
 **Navigator:** *Tony* <br />
@@ -97,6 +105,8 @@ const mapWith = (arr, callback) => {
 }
 ```
 
+[Back To Top](#table-of-contents)
+
 # Extension Two
 **Navigator:** *Melissa* <br />
 **Driver:** *Tony* <br />
@@ -114,6 +124,8 @@ const reduce = (arr, initialValue, callback) => {
   return counter
 }
 ```
+
+[Back To Top](#table-of-contents)
 
 # Extension Three
 **Navigator:** *Tony* <br />
@@ -144,6 +156,8 @@ const intersection = (...arr) => {
 }
 ```
 
+[Back To Top](#table-of-contents)
+
 # Extension Four
 **Navigator:** *Melissa* <br />
 **Driver:** *Tony* <br />
@@ -170,6 +184,8 @@ const unionOptimized = (...arr) => {
 }
 ```
 
+[Back To Top](#table-of-contents)
+
 # Extension Five
 **Navigator:** *Melissa* <br />
 **Driver:** *Tony* <br />
@@ -192,6 +208,8 @@ const objOfMatches = (arr1, arr2, callback) => {
   return newObj
 }
 ```
+
+[Back To Top](#table-of-contents)
 
 # Extension Six
 **Navigator:** *Tony* <br />
@@ -216,6 +234,8 @@ const multiMap = (arr1, arr2) => {
 }
 ```
 
+[Back To Top](#table-of-contents)
+
 # Extension Seven
 **Navigator:** *Tony* <br />
 **Driver:** *Melissa* <br />
@@ -238,6 +258,8 @@ const objectFilter = (obj, callback) => {
   return newObj
 }
 ```
+
+[Back To Top](#table-of-contents)
 
 # Challenge Five
 **Navigator:** *Melissa* <br />
@@ -328,6 +350,8 @@ app.listen(PORT, () => {
 })
 ```
 
+[Back To Top](#table-of-contents)
+
 # Extension Eight
 **Navigator:** *Tony* <br />
 **Driver:** *Melissa* <br />
@@ -351,6 +375,8 @@ show (req, res, next) {
   }
 ```
 
+[Back To Top](#table-of-contents)
+
 # Extension Nine
 **Navigator:** *Melissa* <br />
 **Driver:** *Tony* <br />
@@ -360,3 +386,5 @@ show (req, res, next) {
 [Live Link](https://peer-programming.herokuapp.com/)
 
 App has been deployed with a table describing the end points.
+
+[Back To Top](#table-of-contents)
