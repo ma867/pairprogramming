@@ -197,12 +197,12 @@ For this challenge we have to array and essentially we need to apply the callbac
 ```
 const multiMap = (arr1, arr2) => {
   const newObj = {}
-  forEach(arr1, (str) => {
-    const callbackValue = []
+  const callbackValue = map(arr1, (string) => {
+    const newArr = []
     forEach(arr2, (i) => {
-      callbackValue.push(i(str))
+      newArr.push(i(string))
     })
-    newObj[str] = callbackValue
+    newObj[string] = newArr
   })
 
   return newObj
@@ -347,7 +347,7 @@ show (req, res, next) {
 # Extension Nine
 **Navigator:** *Melissa* <br />
 **Driver:** *Tony* <br />
-**SRC File:** &nbsp; 
+**SRC File:** 'index.html'&nbsp; 
 
 ## Description:
 

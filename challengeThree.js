@@ -10,6 +10,8 @@ console.log(map([1, 2, 3, 4, 5], (i) => {
   return i + 2
 }))
 
+module.exports = map
+
 // map([1,2,3,4,5], multiplyByTwo); //-> [2,4,6,8,10]
 // multiplyByTwo(1); //-> 2
 // multiplyByTwo(2); //-> 4

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pair Programming</title>
+</head>
+<body>
+    <div id="wrapper">
+        <table>
+            <tr>
+              <th>Action</th>
+              <th>URL</th>
+              <th>HTTP Verb</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Index</td>
+              <td>/api/blogs</td>
+              <td>GET</td>
+              <td>This endpoint will return all the objects inside the Blog array.</td>
+            </tr>
+            <tr>
+              <td>Show</td>
+              <td>/api/blogs/:id</td>
+              <td>GET</td>
+              <td>This endpoint will return the object with the id specified in the URL from the Blog array.</td>
+            </tr>
+            <tr>
+              <td>Create</td>
+              <td>/api/blogs</td>
+              <td>POST</td>
+              <td>This endpoint will create a new object with the passed JSON data in the Blog array.</td>
+            </tr>
+          </table>
+    </div>
+</body>
+</html>

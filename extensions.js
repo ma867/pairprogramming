@@ -1,4 +1,5 @@
 const forEach = require('./challengeFour')
+const map = require('./challengeThree')
 
 // ==========EXTENSION 1=================
 
@@ -93,12 +94,12 @@ const mapWith = (arr, callback) => {
   // ==========EXTENSION 6=================
   const multiMap = (arr1, arr2) => {
     const newObj = {}
-    forEach(arr1, (str) => {
-      const callbackValue = []
+    const callbackValue = map(arr1, (string) => {
+      const newArr = []
       forEach(arr2, (i) => {
-        callbackValue.push(i(str))
+        newArr.push(i(string))
       })
-      newObj[str] = callbackValue
+      newObj[string] = newArr
     })
   
     return newObj

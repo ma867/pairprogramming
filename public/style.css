@@ -1,0 +1,31 @@
+body {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center 
+}
+
+#wrapper {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 60vh;
+    width: 60vw;
+}
+
+th, tr, td {
+    padding: 10px;
+}
+
+td, th {
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+th {
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
