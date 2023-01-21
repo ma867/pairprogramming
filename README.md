@@ -25,6 +25,7 @@
 ## Description:
 This challenge takes one argument in the form of a number and adds the number "2" to it. The goal was to keep it short and simple, thus we return the parameter with "2" added to it.
 
+**Solution:**
 ```
 const addTwo = (num) => {
   return num + 2
@@ -41,6 +42,7 @@ const addTwo = (num) => {
 ## Description:
 This challenge takes an argument and adds the string 's' to it, thus we return just that.
 
+**Solution:**
 ```
 const addS = (str) => {
   return str + 's'
@@ -57,6 +59,7 @@ const addS = (str) => {
 ## Description:
 With this problem we are running a basic for loop to run through the arr that is the user's input. As we run through that array in the for loop we are applying the call back function to each of the elements in the array and pushing that reasult into a new array. We then return the new array.
 
+**Solution:**
 ```
 const map = (arr, callBack) => {
   const newArr = []
@@ -77,6 +80,7 @@ const map = (arr, callBack) => {
 ## Description:
 To simulate "forEach" we just write a function that will apply the call back function to every element in the array using a for loop.
 
+**Solution:**
 ```
 const forEach = (arr, callback) => {
   for (let i = 0; i < arr.length; i++) {
@@ -95,6 +99,7 @@ const forEach = (arr, callback) => {
 ## Description:
 For this function we rewrote the map function utilizing the forEach function we wrote previously.
 
+**Solution:**
 ```
 const mapWith = (arr, callback) => {
   const newArr = []
@@ -115,6 +120,7 @@ const mapWith = (arr, callback) => {
 ## Description:
 We are utilizing the initial value to create a counter and then navigating through the arr to add to the counter and then return the counter.
 
+**Solution:**
 ```
 const reduce = (arr, func, initialValue) => {
   let acc = initialValue
@@ -135,6 +141,7 @@ const reduce = (arr, func, initialValue) => {
 ## Description:
 The goal is to pull out the first array in the array of arrays. Thats what we use to compare if a number appears in all the other arrays. We run a forEach over that first array and we check if the other arrays include that number, if they do we increment the counter. If the counter hits the number of arrays that are left we push that number to our result.
 
+**Solution:**
 ```
 const intersection = (...arr) => {
   const newArr = arr.shift()
@@ -166,6 +173,7 @@ const intersection = (...arr) => {
 ## Description:
 For this challenge we need to join the elements in any given amount of arrays while ensuring that there aren’t any duplicates. We use the spread operator in our argument declaration since we don’t know how many arrays the user will pass. Using the custom forEach function, we use the spread operator to push all the elements inside each array into a new array. Then, using the Set class, we are able to delete any duplicates. Finally, we cast the set into an array and return it.
 
+**Solution:**
 ```
 const union = (...arr) => {
   const newArr = []
@@ -194,7 +202,7 @@ const unionOptimized = (...arr) => {
 ## Description:
 For this challenge, we are trying to see if the converted output from an element inside of first array matches the value of the same index in the second array. To start off we create an empty object that will return our final output. Using our custom forEach function, we iterate through the second array's elements. We convert each element using the callback function and compare it to the original value. If it maches, we add it to the object.
 
-
+**Solution:**
 ```
 const objOfMatches = (arr1, arr2, callback) => {
   const newObj = {}
@@ -219,6 +227,7 @@ const objOfMatches = (arr1, arr2, callback) => {
 ## Description:
 For this challenge we have to array and essentially we need to apply the callback functions in the second array to the elements in the first array. However it is not that simple becuase we want the results of all those functions to be stored into and array and then assigning that array to the value of the first array as a key + value pair. To do this we creae an empty array and run those callback functions on the value from the first index of the first array. They get pushed into the empty array and then the array gets assigned to that value as a key + value pair before moving on to the second value in that first array.
 
+**Solution:**
 ```
 const multiMap = (arr1, arr2) => {
   const newObj = {}
@@ -244,6 +253,7 @@ const multiMap = (arr1, arr2) => {
 ## Description:
 So we need to run the provided callback function on the key in the object first, we store that in its own variable in our loop through the object. In an if statement we compare that agains the value from the first key. If they match they need to be put into our new obj to return as the result.
 
+**Solution:**
 ```
 const objectFilter = (obj, callback) => {
   const newObj = {}
@@ -360,6 +370,7 @@ app.listen(PORT, () => {
 ## Description:
 For this we were only using one function in our server that we could replace with one that we wrote. So we imported our forEach into the file and used it instead of the for loop we had originally.
 
+**Solution:**
 ```
 const forEach = require('../challengeFour')
 ```
