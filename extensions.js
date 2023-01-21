@@ -1,0 +1,141 @@
+const forEach = require('./challengeFour')
+
+// ==========EXTENSION 1=================
+
+const mapWith = (arr, callback) => {
+    const newArr = []
+    forEach(arr, (i) => {
+      newArr.push(callback(i))
+    })
+    return newArr
+  }
+  
+  console.log(
+    mapWith([1, 2, 3], (i) => {
+      return i + 2
+    })
+  )
+  
+  // ==========EXTENSION 2=================
+  const reduce = (arr, initialValue, callback) => {
+    let counter = initialValue
+    forEach(arr, (i) => {
+      counter += callback(i)
+    })
+    return counter
+  }
+  
+  console.log(
+    reduce([1, 2, 3], 0, (i) => {
+      return i + 2
+    })
+  )
+  
+  // ==========EXTENSION 3=================
+  const intersection = (...arr) => {
+    const newArr = arr.shift()
+    const result = []
+  
+    forEach(newArr, (num) => {
+      let counter = 0
+      forEach(arr, (i) => {
+        if (i.includes(num)) {
+          counter++
+        }
+      })
+      if (counter === arr.length) {
+        result.push(num)
+      }
+    })
+  
+    return result
+  }
+  
+  console.log(
+    intersection([5, 10, 15, 20, 10], [15, 88, 1, 5, 7], [1, 10, 15, 5, 20])
+  )
+  
+  // ==========EXTENSION 4=================
+  const union = (...arr) => {
+    const newArr = []
+    forEach(arr, (i) => {
+      newArr.push(...i)
+    })
+  
+    return Array.from(new Set(newArr))
+  }
+  
+  console.log(union([5, 10, 15, 5], [15, 88, 1, 5, 7], [100, 15, 10, 1, 5]))
+  
+  // ==========EXTENSION 5=================
+  const objOfMatches = (arr1, arr2, callback) => {
+    const newObj = {}
+    forEach(arr2, (i) => {
+      const match = callback(i)
+      if (i === match) {
+        newObj[arr1[arr2.indexOf(i)]] = match
+      }
+    })
+  
+    return newObj
+  }
+  
+  console.log(
+    objOfMatches(
+      ['hi', 'howdy', 'bye', 'later', 'hello'],
+      ['HI', 'Howdy', 'BYE', 'LATER', 'hello'],
+      function (str) {
+        return str.toUpperCase()
+      }
+    )
+  )
+  
+  // ==========EXTENSION 6=================
+  const multiMap = (arr1, arr2) => {
+    const newObj = {}
+    forEach(arr1, (str) => {
+      const callbackValue = []
+      forEach(arr2, (i) => {
+        callbackValue.push(i(str))
+      })
+      newObj[str] = callbackValue
+    })
+  
+    return newObj
+  }
+  
+  console.log(
+    multiMap(
+      ['catfood', 'glue', 'beer'],
+      [
+        function (str) {
+          return str.toUpperCase()
+        },
+        function (str) {
+          return str[0].toUpperCase() + str.slice(1).toLowerCase()
+        },
+        function (str) {
+          return str + str
+        }
+      ]
+    )
+  )
+  
+  // ==========EXTENSION 7=================
+  const objectFilter = (obj, callback) => {
+    const newObj = {}
+    const keys = Object.keys(obj)
+    forEach(keys, (i) => {
+      const checkVal = callback(i)
+      if (checkVal === obj[i]) {
+        newObj[i] = checkVal
+      }
+    })
+  
+    return newObj
+  }
+  
+  console.log(
+    objectFilter({ me: 'ME', you: 'you', them: 'THEM' }, (key) =>
+      key.toUpperCase()
+    ))
