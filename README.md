@@ -189,7 +189,7 @@ const unionOptimized = (...arr) => {
 # Extension Five
 **Navigator:** *Melissa* <br />
 **Driver:** *Tony* <br />
-**SRC File:** 'challengeFour.js'&nbsp; <mark>&nbsp;line: 70&nbsp;</mark>
+**SRC File:** 'extensions.js'&nbsp; <mark>&nbsp;line: 70&nbsp;</mark>
 
 ## Description:
 For this challenge, we are trying to see if the converted output from an element inside of first array matches the value of the same index in the second array. To start off we create an empty object that will return our final output. Using our custom forEach function, we iterate through the second array's elements. We convert each element using the callback function and compare it to the original value. If it maches, we add it to the object.
