@@ -163,6 +163,13 @@ const union = (...arr) => {
 }
 ```
 
+**Optimized Solution:**
+```
+const unionOptimized = (...arr) => {
+  return Array.from(new Set(arr.flat()))
+}
+```
+
 # Extension Five
 **Navigator:** *Melissa* <br />
 **Driver:** *Tony* <br />

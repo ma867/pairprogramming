@@ -65,6 +65,11 @@ const mapWith = (arr, callback) => {
   
     return Array.from(new Set(newArr))
   }
+
+  // Optimized Solution
+  const unionOptimized = (...arr) => {
+    return Array.from(new Set(arr.flat()))
+  }
   
   console.log(union([5, 10, 15, 5], [15, 88, 1, 5, 7], [100, 15, 10, 1, 5]))
   
