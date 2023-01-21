@@ -131,7 +131,7 @@ const intersection = (...arr) => {
 **SRC File:** 'challengeFour.js'&nbsp; <mark>&nbsp;line: 66&nbsp;</mark>
 
 ## Description:
-
+For this challenge we need to join the elements in any given amount of arrays while ensuring that there aren’t any duplicates. We use the spread operator in our argument declaration since we don’t know how many arrays the user will pass. Using the custom forEach function, we use the spread operator to push all the elements inside each array into a new array. Then, using the Set class, we are able to delete any duplicates. Finally, we cast the set into an array and return it.
 
 ```
 const union = (...arr) => {
@@ -150,6 +150,7 @@ const union = (...arr) => {
 **SRC File:** 'challengeFour.js'&nbsp; <mark>&nbsp;line: 78&nbsp;</mark>
 
 ## Description:
+For this challenge, we are trying to see if the converted output from an element inside of first array matches the value of the same index in the second array. To start off we create an empty object that will return our final output. Using our custom forEach function, we iterate through the second array's elements. We convert each element using the callback function and compare it to the original value. If it maches, we add it to the object.
 
 
 ```
