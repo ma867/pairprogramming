@@ -350,8 +350,6 @@ show (req, res, next) {
 **SRC File:** 'index.html'&nbsp; 
 
 ## Description:
+[Live Link](https://peer-programming.herokuapp.com/)
 
-
-```
-
-```
+App has been deployed with a table descriping the end points.
