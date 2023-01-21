@@ -352,4 +352,4 @@ show (req, res, next) {
 ## Description:
 [Live Link](https://peer-programming.herokuapp.com/)
 
-App has been deployed with a table descriping the end points.
+App has been deployed with a table describing the end points.
