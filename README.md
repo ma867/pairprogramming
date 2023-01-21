@@ -116,12 +116,12 @@ const mapWith = (arr, callback) => {
 We are utilizing the initial value to create a counter and then navigating through the arr to add to the counter and then return the counter.
 
 ```
-const reduce = (arr, initialValue, callback) => {
-  let counter = initialValue
+const reduce = (arr, func, initialValue) => {
+  let acc = initialValue
   forEach(arr, (i) => {
-    counter += callback(i)
+    acc = func(acc, i)
   })
-  return counter
+  return acc
 }
 ```
 

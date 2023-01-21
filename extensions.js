@@ -18,18 +18,18 @@ console.log(
 )
 
 // ==========EXTENSION 2=================
-const reduce = (arr, initialValue, callback) => {
-  let counter = initialValue
+const reduce = (arr, func, initialValue) => {
+  let acc = initialValue
   forEach(arr, (i) => {
-    counter += callback(i)
+    acc = func(acc, i)
   })
-  return counter
+  return acc
 }
 
 console.log(
-  reduce([1, 2, 3], 0, (i) => {
-    return i + 2
-  })
+  reduce([4, 1, 3], (a, b) => {
+    return a + b
+  }, 0)
 )
 
 // ==========EXTENSION 3=================
