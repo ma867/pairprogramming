@@ -8,7 +8,7 @@ const dataController = {
   },
   show (req, res, next) {
     forEach(Blog, (i) => {
-      if(req.params.id == i.id){
+      if (req.params.id == i.id) {
         res.locals.data.blog = i
       }
     })
